@@ -1,4 +1,5 @@
-\documentclass[a4paper, landscape]{article}
+\documentclass{article}
+\usepackage[a4paper, landscape, margin=1cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{multicol}
 
@@ -6,13 +7,28 @@
 \usepackage{graphicx}
 
 \begin{document}
-\begin{multicols}{2}
+\begin{multicols*}{2}
 
 \section*{Thermodynamics}
 \begin{tabular}{l l}
-    1st Law of Thermodynamics & $hello$  \\
-     & 
+    1st Law of Thermodynamics & $du = dq - dw$  \\
+    TDS Equation 1 & $Tds = du + pdv$ \\
+    TDS Equation 2 & $Tds = dh - vdp$ \\
+    Enthalpy & $h = u + pv$
 \end{tabular}
 
-\end{multicols}
+\section*{Ideal Gas}
+\begin{tabular}{l l}
+    Ideal Gas Equation & $pv = RT$ \\
+    Constant Volume & $c_v = (\partial u / \partial T)_v$ \\
+     & $du = c_v (T) dT$ \\
+     Constant Pressure & $c_p = (\partial h / \partial T)_p$ \\
+     & $dh = c_p (T) dT$ \\
+     Thermal coefficients & $c_p = c_v - R$ \\
+      & $\gamma = k = \frac{c_p}{c_v}$ \\
+      Specific Enthalpy of Gases & $h = u + pv = u(T) + RT = h(T)$ \\
+       & $\Rightarrow$ does not depend on pressure
+\end{tabular}
+
+\end{multicols*}
 \end{document}
