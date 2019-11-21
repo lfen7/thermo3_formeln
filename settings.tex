@@ -1,7 +1,7 @@
 %% Include this document with the \input command
 
 \documentclass[a4paper, 11pt]{article}
-\usepackage[a4paper, landscape, margin=1cm]{geometry}
+\usepackage[a4paper, landscape, margin=1cm, twocolumn]{geometry}
 
 % -------- Packages --------
 \usepackage[utf8]{inputenc} 		% input encoding, umlauts etc.
@@ -10,13 +10,14 @@
 
 \usepackage{tikz}				% graphics
 \usepackage{graphicx}		% boxes around Eqns, Formulae, etc
+\usepackage{tabularx}
 
 \usepackage{fancyhdr}		% headers
 \usepackage{lscape}			% make it possible to rotate text 180deg
 \usepackage{multicol}			% multiple columns
 \usepackage{hyperref}			% hyperlinks
 \hypersetup{
-     		bookmarks = true,
+     		% bookmarks = true,
      		colorlinks = true,       				% false: boxed links; true: colored links
     		linkcolor = black,          				% color of internal links
     		citecolor = black,        				% color of links to bibliography
