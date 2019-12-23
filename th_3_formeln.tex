@@ -3,22 +3,57 @@
 
 \begin{document}
 
+\section*{Velocity Triangles}
+\begin{itemize}
+	\item You need to draw velocity triangles over a turbine rotor and compressor rotor.
+	\item Be careful with signs and indices of stator and rotor.
+\end{itemize}
+
+\subsection*{Nomenclature} 
+\begin{tabular}{ m{5cm} l}
+	Stator exit angle & $\alpha_1$\\
+	Rotor inlet angle & $\beta_1$ \\
+	Rotor outlet angle & $\beta_2$ \\
+	Rel. rotor inlet velocity & $W_1$ \\
+	Rel. rotor outlet velocity & $W_2$ \\
+   \textit{ Absolute frame of reference:} & \\
+    Velocity & $C$ \\
+    Angle & $\alpha$ \\
+    \textit{Relative frame of reference:} & \\
+    Velocity & $W$ \\
+    Angle & $\beta$ \\
+\end{tabular} \\
+
+\subsection*{Calculations} 
+\begin{tabular}{ m{5cm} l}
+	Rotational speed & $U = \omega \cdot r = 2 \pi \cdot f \cdot r$ \\
+	Mass flow & $\dot{m} = \rho \cdot A \cdot C_x $ \\
+	Geometry & $C_{\theta 1 } = C_x \tan( \alpha_1 ) $ \\
+		& $C_{\theta 1} = r \omega - C_x \tan \left( \beta_2 \right) $ \\
+		& $\Delta h_T = U \cdot \Delta C_\theta = U \left(C_{\theta 2} - C _{\theta 1} \right) $ \\
+	Euler Work & $\Delta W = \frac{\text{Power}}{\dot{m}} = \Delta h_T = U \cdot \Delta C_\theta$
+\end{tabular}
+
+
 \section*{Thermodynamics}
 \begin{tabular}{ m{5cm} l}
     1st Law of Thermodynamics & $du = dq - dw$  \\
+     & $\dot{W} - \dot{Q} = \dot{m} \left( h_1 - h_2 + \frac{v_1^2 - v_2^2}{\rho} + g \left(z_1 - z_2 \right) \right)$ \\
     TDS Equation 1 & $Tds = du + pdv$ \\
     TDS Equation 2 & $Tds = dh - vdp$ \\
-    Enthalpy & $h = u + pv$
+    Enthalpy & $h = u + pv$ \\
+     & $d h  = du + p dv + v dp$ \\
 \end{tabular}
 
 \section*{Ideal Gas}
 \begin{tabular}{ m{5cm} l}
     Ideal Gas Equation & $pv = RT$ \\
+     & $p = \rho R T$ \\
     Constant Volume & $c_v = (\partial u / \partial T)_v$ \\
      & $du = c_v (T) dT$ \\
      Constant Pressure & $c_p = (\partial h / \partial T)_p$ \\
      & $dh = c_p (T) dT$ \\
-     Thermal coefficients & $c_v = c_p - R$ \\
+     Thermal coefficients & $R = c_p - c_v$ \\
       & $\gamma = k = \frac{c_p}{c_v}$ \\
       Specific Enthalpy of Gases & $h = u + pv = u(T) + RT = h(T)$ \\
        & $\Rightarrow$ does not depend on pressure
@@ -30,17 +65,25 @@
     $\frac{p_2}{p_1} = \left( \frac{v_1}{v_2} \right)^{ \gamma } $ & \\
 \end{tabular}
 
-\section*{Turbines and Compressors}
+\section*{Turbines, Compressors, Refrigerator and Heat Pump}
     \begin{tabular}{ m{5cm} l}
-    Isentr. turbine efficiency & $\eta_{\text{turbine}} = \frac{h_{in} - h_{out}}{h_{in} - h_{out,s}}$ \\
-    Isentr. compressor efficiency & $\eta_{\text{compressor}} = \frac{h_{out,s} - h_{in}}{h_{out} - h_{in}}$ \\
-    Heat pump "Leistungsziffer" & $\varepsilon_{WP} = \frac{\Dot{Q}_{out}}{W_{komp}}$ \\
+    Isentr. turbine efficiency & $\eta_{\text{turbine}} = \frac{h_{in} - h_{out}}{h_{in} - h_{out,s}} = \frac{\text{real work}}{\text{ideal work}} $ \\
+    Isentr. compressor efficiency & $\eta_{\text{compressor}} = \frac{h_{out,s} - h_{in}}{h_{out} - h_{in}} = \frac{\text{ideal work}}{\text{real work}} $  \\
+    Thermal efficiency & $\eta_{\text{thermal}} = \frac{W_{\text{out, net}}}{Q_{\text{in}}} $ \\
+    Ideal pump work & $\Delta h = v \cdot \Delta p$ \\
+    Heat pump "Leistungsziffer" & $\varepsilon_{HP} = \frac{\Dot{Q}_{out}}{W_{komp}} \left( = \frac{h_2 - h_3}{h_2 - h_1} \right) $ \\
+    Refrigerator "Leistungsziffer" & $\varepsilon_{KM} = \frac{\Dot{Q}_{in}}{W_{komp}} \left( = \frac{h_1 - h_4}{h_2 - h_1} \right)$ \\
     \end{tabular}
     
 \section*{General}
+You should know:
 \begin{itemize}
-    \item You should know t-s diagrams by heart and be able to draw it.
-    \item Ottoprozess: Gleichraumprozess, Diesel: Gleichdruckprozess.
+    \item The t-s diagrams by heart and be able to draw it.
+    \item How to draw the p-v diagrams of the Otto and Diesel Cycle.
+    \item How the Brayton Cycle works. 
+    \item How the heat pump and refrigerator cycles work.
+    \item Ottoprozess: Gleichraumprozess (isochor), Diesel: Gleichdruckprozess (isobar).
+    
     
 \end{itemize}
 
