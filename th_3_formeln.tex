@@ -63,7 +63,14 @@
 \begin{tabular}{ m{5cm} l}
     $\frac{T_2}{T_1} = \left( \frac{p_2}{p_1} \right)^{ \frac{\gamma - 1}{\gamma}} $ & $\frac{T_2}{T_1} = \left( \frac{v_1}{v_2} \right)^{ \gamma -1 } $ \\
     $\frac{p_2}{p_1} = \left( \frac{v_1}{v_2} \right)^{ \gamma } $ & \\
-\end{tabular}
+\end{tabular}\\
+
+Personally, I struggle with the above formulae. They are, however very easy to derive. You only need to know two things: \\
+$\mathbf{ pv = RT }$ and $ \mathbf{ p_1 v_1^\gamma = p_2 v_2^\gamma }$, the first is the ideal gas law and the second follows from the isentropic condition $p\cdot v^\gamma = \text{const.}$ \\
+From this we get: 
+	$$\frac{p_2}{p_1} = \left( \frac{v_1}{v_2} \right)^\gamma  \Rightarrow \frac{v_1}{v_2} = \left( \frac{p_2}{p_1} \right)^{1/\gamma}$$
+	$$ \frac{T_2}{T_1} = \underbrace{ \frac{p_2 v_2}{p_1 v_1}}_{\text{ideal gas law}} = \underbrace{\left( \frac{v_1}{v_2} \right)^\gamma}_{\text{from above}} \cdot \frac{v_2}{v_1} = \left( \frac{v_1}{v_2} \right)^{\gamma -1} $$
+	$$ \frac{T_2}{T_1} = \underbrace{ \frac{p_2 v_2}{p_1 v_1}}_{\text{ideal gas law}} = \frac{p_2}{p_1} \cdot \underbrace{ \left( \frac{p_2}{p_1} \right)^{-1/\gamma}}_{\text{from above}} = \left( \frac{p_2}{p_1} \right)^{1 - \frac{1}{\gamma}} = \left( \frac{p_2}{p_1} \right)^{\frac{\gamma -1}{\gamma}}$$
 
 \section*{Turbines, Compressors, Refrigerator and Heat Pump}
     \begin{tabular}{ m{5cm} l}
