@@ -9,7 +9,7 @@
 	\item Be careful with signs and indices of stator and rotor.
 \end{itemize}
 
-\subsection*{Nomenclature} 
+\subsection*{Nomenclature}
 \begin{tabular}{ m{5cm} l}
 	Stator exit angle & $\alpha_1$\\
 	Rotor inlet angle & $\beta_1$ \\
@@ -24,7 +24,7 @@
     Angle & $\beta$ \\
 \end{tabular} \\
 
-\subsection*{Calculations} 
+\subsection*{Calculations}
 \begin{tabular}{ m{5cm} l}
 	Rotational speed & $U = \omega \cdot r = 2 \pi \cdot f \cdot r$ \\
 	Mass flow & $\dot{m} = \rho \cdot A \cdot C_x $ \\
@@ -67,7 +67,7 @@
 
 Personally, I struggle with the above formulae. They are, however very easy to derive. You only need to know two things: \\
 $\mathbf{ pv = RT }$ and $ \mathbf{ p_1 v_1^\gamma = p_2 v_2^\gamma }$, the first is the ideal gas law and the second follows from the isentropic condition $p\cdot v^\gamma = \text{const.}$ \\
-From this we get: 
+From this we get:
 	$$\frac{p_2}{p_1} = \left( \frac{v_1}{v_2} \right)^\gamma  \Rightarrow \frac{v_1}{v_2} = \left( \frac{p_2}{p_1} \right)^{1/\gamma}$$
 	$$ \frac{T_2}{T_1} = \underbrace{ \frac{p_2 v_2}{p_1 v_1}}_{\text{ideal gas law}} = \underbrace{\left( \frac{v_1}{v_2} \right)^\gamma}_{\text{from above}} \cdot \frac{v_2}{v_1} = \left( \frac{v_1}{v_2} \right)^{\gamma -1} $$
 	$$ \frac{T_2}{T_1} = \underbrace{ \frac{p_2 v_2}{p_1 v_1}}_{\text{ideal gas law}} = \frac{p_2}{p_1} \cdot \underbrace{ \left( \frac{p_2}{p_1} \right)^{-1/\gamma}}_{\text{from above}} = \left( \frac{p_2}{p_1} \right)^{1 - \frac{1}{\gamma}} = \left( \frac{p_2}{p_1} \right)^{\frac{\gamma -1}{\gamma}}$$
@@ -79,20 +79,21 @@ From this we get:
     Thermal efficiency & $\eta_{\text{thermal}} = \frac{W_{\text{out, net}}}{Q_{\text{in}}} $ \\
     Ideal pump work & $\Delta h = v \cdot \Delta p$ \\
     & \textbf{Careful:} \textit{p} in Pa, not bar! \\
+		Isentropic Compression & $h_2 = h_1 + v_1 \left( p_2 - p_1 \right)$ \\
     Heat pump "Leistungsziffer" & $\varepsilon_{HP} = \frac{\Dot{Q}_{out}}{W_{komp}} \left( = \frac{h_2 - h_3}{h_2 - h_1} \right) $ \\
     Refrigerator "Leistungsziffer" & $\varepsilon_{KM} = \frac{\Dot{Q}_{in}}{W_{komp}} \left( = \frac{h_1 - h_4}{h_2 - h_1} \right)$ \\
     \end{tabular}
-    
+
 \section*{General}
 You should know:
 \begin{itemize}
     \item The t-s diagrams by heart and be able to draw it.
     \item How to draw the p-v diagrams of the Otto and Diesel Cycle.
-    \item How the Brayton Cycle works. 
+    \item How the Brayton Cycle works.
     \item How the heat pump and refrigerator cycles work.
     \item Ottoprozess: Gleichraumprozess (isochor), Diesel: Gleichdruckprozess (isobar).
-    
-    
+
+
 \end{itemize}
 
 \end{document}
